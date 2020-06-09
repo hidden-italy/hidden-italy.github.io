@@ -49,7 +49,16 @@ body {  padding-top: 70px;
 		background: white;
 		padding:12px;
 	}
-
+	#table-of-content{
+		line-height: 1.4em;
+		background: #f9fbfb;
+		padding:12px;
+	}
+	#bibliography ul {
+		line-height: 1.4em;
+		list-style: none;
+		font-size:0.9em;
+	}
 	#footer {
 		text-align: center;
 		padding: 3em 0 3em 0;

@@ -56,12 +56,36 @@
 			<div class="row" id="title">
 					<h1>Project Documentation</h1>
 			</div>
-			<div class="row" id="article">
-				<div class="container section">
-				<h2 class="pb-3">Our project</h2>
+			<div class="row" id="index">
+        <div class="container  col-md-8 col-lg-6 mt-3" id="table-of-content">
+          <h4>Table of Content</h4>
+          <ul>
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#concepts">Concepts and purposes</a></li>
+            <li><a href="#target">Target users</a></li>
+            <li><a href="#development">Development and technological requirements</a></li>
+            <li><a href="#roles">Roles</a></li>
+            <li><a href="#museological-approach">Museological approach</a></li>
+            <li><a href="#interaction">Interaction</a></li>
+            <li><a href="#pilot">Pilot production</a></li>
+            <li><a href="#mantainance">Mantainance and further developments</a></li>
+            <li><a href="#bibliography">Bibliography</a></li>
+          </ul>
+        </div>
+         <div class="container  col-md-4 col-lg-6">
+         </div>
+      </div>
+      <div class="row" id="article">
+				<div class="container section" id="introduction">
+				<h2 class="pb-3">Introduction</h2>
         <p><b>Hidden Italy</b> is a virtual project realized by Ariele Santello, Benedetta Togni and Cristian Santini. This website aims to be an <b>ongoing exhibition about marginal identities</b> in Italy, especially about African immigrants, their lives and struggles, confronted with the issues of a nation in which <b>social inclusion</b> still lacks to involve refugees and asylum seekers. With this digital environment we want to create an <b>open space of representation, communication and collaboration</b>, while aiming at <b>enhancing the public awareness</b> related to the Italian reception and integration system.</p>
+        </div>
+        <div class="container section" id="concepts">
         <h2 class="pb-3">Concepts and purposes</h2>
 				<p>From north to south Italy immigrant occupy abandoned places, can they be buildings, farmhouses, shacks or open air places. Most of the time they are without electricity or water, under bad health conditions. For informal settlement we mean, according to <b>Medici senza frontiere</b>, a population composed of refugees excluded from governative welcoming systems, that has to be of non-seasonal type and self- organized.  Everybody knows the refugee camp, where they are placed. They have a precise location, they are from a legislative point of view “places”. An informal settlement is a non-place because it legally doesn’t exist and the people that live there are “invisible”. Of course they occupy a geographical place, and also most of them work, but they still remain invisible because they juridically are not present. One of the purposes of this project is to try to give them a geographical existence, maps playing an important role in our virtual exhibition. <b>Hidden Italy</b> is an existing country composed by people that live and work, maybe also in our same city.</p>
+        <div class="container img-wrapper d-flex justify-content-center py-5" >
+          <img src="images/conceptual-map.png">
+        </div>
         <p>
           Since we are open to public involvements and contribution, we expect this project to grow and to host different types of content. At the moment, the project is divided in <b>3 sections</b>:
           <ul>
@@ -79,30 +103,49 @@
         <p>
           In addition we wanted to study how the Italian public debate has dealt with the problem of migrants and refugees left out from the public integration system and we collected a small corpus of <b>newspaper articles</b> to which we applied general distant reading techniques to display in a intuitive way how the public debate <b>shaped the figure</b> of those invisible lives from 2017 to 2020. To do so we used <i>wordcloud</i> and <i>linked concordances</i>.
         </p>
+        </div>
+        <div class="container section" id="target">
         <h2 class="pb-3">Target user</h2>
         <p>
-          Vistors of our museum can be of course young people but the real challenge for us is to engage people that don’t belong to the millenial generation and that they can have difficulties in using technology and also difficulties in finding valid information in the internet and are much more exposed to the fake news phenomena. 
+          Visitors of our museum can be of course <b>young people</b>, but the real challenge for us is to <b>engage people that don’t belong to the millennial generation</b>. They can have difficulties in using technology and also difficulties in finding valid information in the internet and, consequently, are much more <b>exposed to the fake news phenomena</b>. For this reason we try to provide and <b>display the content in a clear and easy-to-understand way</b>, guiding  the user giving him clear instruction in the section of data visualization. Furthermore we try to improve the usability, in doing so the questionnaire plays an important role. <b>We analyze our target users giving them a questionnaire.</b> We took a cross-section of person belonging to the so-called <i>generation x</i> (those born between 1961 and 1980) and  to the <i>baby boomers</i> (born between 1945 and 1960). 
         </p>
+        <p>
+          Firstly they visit our exhibition then they fill our questionnaire. It is <b>divided in 5 sections</b>: preliminary questions about gender and age, technology; the relationship with it and its usage for reaching information, museums and virtual exhibitions; some <b>questions about the user’s experience with museums and virtual museum</b>, what are his/her preference with it. Then a <b>test about the information of our museum</b> (so we can understand their level of comprehension). The <b>final section is about the level of usability</b> and some suggestions in which the user is invited to evaluate our exhibition and write down some suggestions so that we can constantly improve our museum. It represent an output for us as developers:
+          <ul>
+            <li>making questions about the content in order to have distance learning approach</li>
+            <li>guarantee a constant interoperability and update content</li>
+            <li>understand what this kind of target user could appreciate and search in a museum</li>
+            <li>understand if the level of the technological devices provided is coherent to the level of the users</li>
+          </ul>
+        </p>
+        </div>
+        <div class="container section" id="development">
         <h2 class="pb-3">Development and Technological Requirements</h2>
         <p>
           As stated before, in order to develop this virtual environment we decided to exploit the main technologies that the <b>web 2.0</b> offered us. This website is designed by our team by using <b>HTML, CSS and Javascript</b>, with the employment of very popular frameworks and libraries such as <b>Bootstrap</b> and <b>JQuery</b>. The website is designed to be supported by the majority of browsers and to be suited for any type of device.
         </p> 
         <p>
           Data visualization was realized by exploiting the services offered by <a href="https://flourish.studio/"target="_blank">Flourish
-        </a>. Georeferenced photographic gallery is made by using the open-source web-based software <a href="https://storymaps.arcgis.com/"target="_blank">ArcGIS StoryMap</a>. The newspaper corpus was realized by scraping the web; in addition general algorithms were used to tokenize the corpus and remove stopwords and noisy words. The wordcloud was realized by using the web-based software <a href="https://wordart.com/"target="_blank">WordArt</a> while the linking concordances are made with another browser software, <a href="https://voyant-tools.org/"target="_blank">Voyant tools</a>.
+        </a>. Georeferenced photographic gallery is made by using the open-source web-based software <a href="https://storymap.knightlab.com/"target="_blank">KnightLab StoryMap JS</a>. The newspaper corpus was realized by scraping the web; in addition general algorithms were used to tokenize the corpus and remove stopwords and noisy words. The wordcloud was realized by using the web-based software <a href="https://wordart.com/"target="_blank">WordArt</a> while the linking concordances are made with another browser software, <a href="https://voyant-tools.org/"target="_blank">Voyant tools</a>.
         </p>
+        </div>
+        <div class="container section" id="roles">
         <h2 class="pb-3">Roles</h2>
         <p>
           <b>The project was supervised and led in harmony by all three team members</b>, although each curated one of the three projects inside our website:
           <ul>
-            <li><b>Benedetta Togni</b> curated <a href="data-visualization.html" target="_blank">Data visualization</a></li>
-            <li><b>Ariele Santello</b> curated <a href="interactive-map.html" target="_blank">Interactive Map</a></li>
-            <li><b>Cristian Santini</b> curated the overall design of the website and <a href="news-analysis.html" target="_blank">Newspaper Analysis</a></li>
+            <li><b>Benedetta Togni</b> was in charge for <b>education, visitor service and communication strategy</b>: preparing targeted materials, dealing with the presentation of the artefacts to the audience and questionnaire developer. She also curated <a href="data-visualization.html" target="_blank">Data visualization</a>.</li>
+            <li><b>Ariele Santello</b> was in charge for <b>document centre management</b>: collection and preparation of the documentary material on the collections and exhibitions. She also curated <a href="interactive-map.html" target="_blank">Interactive Map</a>.</li>
+            <li><b>Cristian Santini</b> was in charge also for <b>Web master and  IT manager</b>: development of the website, management of computers, networks, softwares and digital media system. He also curated <a href="news-analysis.html" target="_blank">Newspaper Analysis</a>.</li>
           </ul>
         </p>
+        </div>
+        <div class="container section" id="museological-approach">
         <h2 class="pb-3">Museological Approach</h2>
         <p>
-          This ongoing exhibition is devoted to the issue of refugees and asylum seekers in Italy. It was conceived as a <b>digital open space</b> in which we can represent complex situations, which too often are hidden or ignored, by using the power that new virtual environments have in deepening our experience and enhancing our <b>interpretation</b> of the world. Following the taxonomy proposed by <b>Simona Caraceni</b> in <i>Designing a taxonomy for virtual museums for the use of Avicom professionals (2015)</i> we can describe our <b>museological approach</b> with the following categories:
+          As stated by the <a href="https://icom.museum/en/resources/standards-guidelines/museum-definition/" target="_blank">ICOM definition</a> a <b>Museum is every <q>non-profit, permanent institution in the service of society and its development, open to the public, which acquires, conserves, researches, communicates and exhibits the tangible and intangible heritage of humanity and its environment for the purposes of education, study and enjoyment.</q></b>
+          We follow this definition to think at our exhibition <b>not only as a collection of interactive applications but as a newborn space in service of society that aims to represent our community through digitalized artefacts, witnesses and other types of tangible or intangible data in order to shape its cultural identity and contribute to its self-awareness.</b>
+          This ongoing exhibition is devoted to the issue of refugees and asylum seekers in Italy. It was conceived as a digital open space in which we can <b>represent complex situations, which too often are hidden or ignored, by using the power that new virtual environments have in deepening our experience and enhancing our interpretation</b> of the world. Following the taxonomy proposed by <b>Simona Caraceni</b> in <i>Designing a taxonomy for virtual museums for the use of Avicom professionals (2015)</i> we can describe our <b>museological approach</b> with the following categories:
           <ul>
             <li><b>Needs:</b> Interpretation of a complex situation in real word by means of new medias</li>
             <li><b>Space:</b> Interactive browsing of digital content</li>
@@ -112,10 +155,59 @@
             <li><b>Visitors Contribution:</b> Allowed, in order to enrich data, provide feedbacks and contributions</li>
           </ul>
         </p>
+        </div>
+        <div class="container section" id="interaction">
          <h2 class="pb-3">Interaction</h2>
          <p>
-
+            Interaction is a <b>key point</b> for our website. First we want to provide a multimedia experience that is able to offer to the user as many <b>patterns of visualization</b> as possible. We want the user to be able to <b>share</b> the project and the contents on the main social media platforms. Moreover another functionality that we want to provide to the user is to enrich the content of our application by sending some <b>contributions</b> via the email address provided in the About of our website. Another important interactive feature is the <b>questionnaire</b> that we created for users that wants to send us a feedback related to how much this website was capable of enriching his awareness of the phenomenon and his experience with virtual exhibitions.
         </p>
+        </div>
+        <div class="container section" id="pilot">
+        <h2 class="pb-3">Pilot production</h2>
+         <p>
+            In order to realize the website, besides the technology that we exploited and the roles that we had, we followed the following steps:
+            <br>
+            First, <b>we gathered all the relevant material for our topic:</b>
+            <ul>
+              <li>we looked for <b>reliable data</b>, instead of data provided with no transparency (i.e. we preferred the report of NGOs, such as Medici Senza Frontiere, instead of those provided by the Italian Interior Minister, which were accused of low transparency)</li>
+              <li>We looked for <b>relevant multimedia content</b> on the web. After a week of search, the photographies of Giulio Piscitelli looked like the most comprehensive witness to represent the migrant question in Italy. We contacted him and he willingly allowed us a non-commercial use of his photos.</li>
+              <li>We <b>scraped the most important Italian newspapers</b> (“La Repubblica”, “Il Resto del Carlino”, “il Sole 24 Ore” etc.) to collect articles that presented some pre-selected keywords (i.e. #migranti, #baraccopoli, #occupazioni, #confine) from 2017 to the start of 2020</li>
+            </ul>
+            Then, <b>we spent one month on the actual implementation</b>. More specifically between May and June 2020 we realized: 
+            <ul>
+              <li>The web infrastructure</li>
+              <li>The data visualization</li>
+              <li>The georeferenced photographic gallery</li>
+              <li> The newspaper analysis</li>
+            </ul>
+            After the actual implementation we dedicated the pilot production to the <b>last refinements</b>. Our goal in this phase was to <b>connect our virtual exhibition with its possible audience</b> by:
+            <ul>
+              <li>Creating a page of Hidden Italy on the main social media platforms</li>
+              <li> Contacting the main organization involved in the issues of refugees and asylum seekers</li>
+              <li> Compiling a module through which users can leave us feedbacks and help our site to grow</li>
+            </ul>
+        </p>
+        </div>
+        <div class="container section" id="mantainance">
+        <h2 class="pb-3">Maintainance and further developments</h2>
+          <p>
+            Our idea is that the virtual exhibition placed in a <b>virtual evironment on the web can constantly be changed and improved.</b> Furthermore we <b>link our virtual museum to social media platform</b>, in order to reach and engage more easily our target users. The content <b>should be managed and uploaded constantly</b>. Due also to our unlucky present situation where going out can be unsafe and not easy to control we decide to use exclusively the virtual platform but we don’t exclude that one day this <b>can be also converted in a real exhibition, by also seeking the support of the main organization involved in the topic</b>.
+          </p>
+        </div>
+        <div class="container section" id="bibliography">
+        <h2 class="pb-3">Bibliography</h2>
+        <p>Here's some useful bibliography for our resource material:
+        <ul>
+          <li>Medici Senza Frontiere, <b>Fuori Campo</b>, 2016, <a href="https://www.medicisenzafrontiere.it/wp-content/uploads/2018/06/Fuoricampo.pdf">https://www.medicisenzafrontiere.it/wp-content/uploads/2018/06/Fuoricampo.pdf</a>.</li>
+          <li>Medici Senza Frontiere, <b>Fuori Campo</b>, 2018, <a href="https://www.medicisenzafrontiere.it/wp-content/uploads/2018/06/Fuoricampo2018.pdf">https://www.medicisenzafrontiere.it/wp-content/uploads/2018/06/Fuoricampo2018.pdf</a>.</li>
+          <li>Caritas, <b>Rapporto presidio</b>, 2015, <a href="https://inmigration.caritas.it/sites/default/files/2016-10/Rapporto_Progetto_Presidio.pdf">https://inmigration.caritas.it/sites/default/files/2016-10/Rapporto_Progetto_Presidio.pdf</a>.</li>
+          <li><b>Giulio Piscitelli's portfolio</b>, <a href="https://giuliopiscitelli.viewbook.com/">https://giuliopiscitelli.viewbook.com/</a>.</li>
+          <li><b>Intangible Heritage - Unesco</b>, <a href="https://ich.unesco.org/">https://ich.unesco.org/</a></li>
+          <li>Caraceni, S., <b>Designing a taxonomy for virtual museums</b>, 2015, <a href="https://pearl.plymouth.ac.uk/handle/10026.1/9915">https://pearl.plymouth.ac.uk/handle/10026.1/9915</a>.</li>
+          <li>ICOM, <b>Key Concepts of Museology</b>, 2010, <a href="http://www.icom-italia.org/wp-content/uploads/2018/02/ICOMItalia.KeyconceptsofMuseology.Pubblicazioni.2010.pdf">http://www.icom-italia.org/wp-content/uploads/2018/02/ICOMItalia.KeyconceptsofMuseology.Pubblicazioni.2010.pdf</a>.</li>
+        </ul>
+        </p>
+        </div>
 				</div>
 			</div>
 		</div>	
