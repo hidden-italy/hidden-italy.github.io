@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+﻿<!DOCTYPE HTML>
 <html>
 	<head>
 		<title>News Analysis - Hidden Italy</title>
@@ -59,16 +59,22 @@
 			</div>
 			<div class="row" id="article">
 				<div class="container section">
+					<p>For our virtual exhibition we conducted this little project of <b>Text Mining</b> on a corpus of Italian newspaper articles written between 2017 and 2020. 
+					Our corpus consists of 57 articles extracted from a well-known Italian journal with a well-known <b>Python web-scraper</b>. 
+					The articles were tokenized and stopwords were removed before they were saved in .txt format. We extracted word frequencies and plotted them by using <b>Pandas</b> and <b>Matplotlib</b>.</p>
+					<p>You can find our corpus, the relevant files and the Python scripts at <a href="https://github.com/hidden-italy/hidden-italy.github.io/tree/master/news_analysis" target="_blank">https://github.com/hidden-italy/hidden-italy.github.io/tree/master/news_analysis</a>.</p>
+				</div>
+				<div class="container section">
 					<h2>Wordcloud</h2>
 					<p>In this image we plotted the words <b>most frequently</b> used by newspapers to address the issue of migrants in informal facilities between 2017 and 2020.</p>
-					<div class="container py-5" id="wordcloud">		
+					<div class="container py-5" id="wordcloud">
 						<a href="images/pic09.png" target="_blank"><img src="images/pic09.png"></a>
 					</div>
 				</div>
 				<div class="container section">
 					<h2>Relation Extraction</h2>
 					<p>Use the <b>Relation Extraction</b> tool provided by <a href="https://voyant-tools.org/" target="_blank">Voyant Tools</a> to see how words are linked together in our collection of newspaper articles.</p>
-					<div class="container d-flex justify-content-center py-5" id="relations">		
+					<div class="container d-flex justify-content-center py-5" id="relations">
 						<iframe style='width: 900px; height: 600px;' src='https://voyant-tools.org/tool/CollocatesGraph/?query=caporali&query=accoglienza&query=ghetto&query=lavoro&query=senza&query=italia&query=baracche&query=persone&query=braccianti&query=immigrati&mode=corpus&corpus=127baae882e76ca49d06983415ceb45b'></iframe>
 					</div>
 				</div>
